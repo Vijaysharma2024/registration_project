@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create Your Account</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h2>Create Your Account</h2>
+
+<form id="regForm">
+
+<div class="row">
+  <div class="field">
+    <label>First Name *</label>
+    <input type="text" id="fname" required>
+  </div>
+
+  <div class="field">
+    <label>Last Name *</label>
+    <input type="text" id="lname" required>
+  </div>
+</div>
+
+<div class="row">
+  <div class="field">
+    <label>Email *</label>
+    <input type="email" id="email" required>
+  </div>
+
+  <div class="field">
+    <label>Phone Number *</label>
+    <input type="text" id="phone" required>
+  </div>
+</div>
+
+<div class="row">
+  <div class="field">
+    <label>Age</label>
+    <input type="number" id="age">
+  </div>
+
+  <div class="field">
+    <label>Gender *</label>
+    <div class="radio-group">
+      <input type="radio" id="male" name="gender"> Male
+      <input type="radio" id="female" name="gender"> Female
+    </div>
+  </div>
+</div>
+
+<div class="field">
+  <label>Address</label>
+  <textarea id="address"></textarea>
+</div>
+
+<div class="row">
+  <div class="field">
+    <label>Country</label>
+    <select id="country">
+      <option>India</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label>State</label>
+    <select id="state">
+      <option>Gujarat</option>
+    </select>
+  </div>
+</div>
+
+<div class="field">
+  <label>City</label>
+  <select id="city">
+    <option>Ahmedabad</option>
+  </select>
+</div>
+
+<div class="row">
+  <div class="field">
+    <label>Password *</label>
+    <input type="password" id="password" required>
+  </div>
+
+  <div class="field">
+    <label>Confirm Password *</label>
+    <input type="password" id="confirm" required>
+  </div>
+</div>
+
+<div class="terms">
+  <input type="checkbox" id="terms"> Accept Terms & Conditions
+</div>
+
+<button type="button" onclick="submitForm()">Submit</button>
+
+</form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
